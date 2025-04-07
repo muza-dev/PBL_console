@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.UpdateQuantityController"
+            prefHeight="200" prefWidth="400">
+    <Label layoutX="130" layoutY="20" text="📝 Miqdorni yangilash" style="-fx-font-size: 16px;"/>
+    <Label layoutX="50" layoutY="70" text="Yangi miqdor:"/>
+    <TextField fx:id="quantityField" layoutX="150" layoutY="70" prefWidth="200"/>
+    <Button text="💾 Saqlash" layoutX="150" layoutY="120" onAction="#handleSave"/>
+    <Label fx:id="statusLabel" layoutX="150" layoutY="150" style="-fx-text-fill: green;"/>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controllers.LoginController">
+
+    <VBox spacing="15" alignment="CENTER"
+          AnchorPane.topAnchor="40.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+
+        <Label text="🔐 Tizimga kirish" style="-fx-font-size: 18px;" />
+        <TextField fx:id="emailField" promptText="Emailingiz" />
+
+        <!-- Parol + ko‘zcha -->
+        <HBox spacing="5">
+            <PasswordField fx:id="passwordField" promptText="Parol" />
+            <TextField fx:id="passwordTextField" promptText="Parol" visible="false" managed="false" />
+            <Button text="👁" onAction="#togglePasswordVisibility" />
+        </HBox>
+
+        <Button text="Kirish" onAction="#handleLogin" />
+        <Button text="Ro‘yxatdan o‘tish" onAction="#goToRegister"/>
+        <Label fx:id="messageLabel" style="-fx-text-fill: red;" />
+
+    </VBox>
+</AnchorPane>
+

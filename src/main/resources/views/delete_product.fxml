@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.DeleteProductController" prefWidth="500" prefHeight="400">
+    <VBox spacing="20" alignment="CENTER" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20">
+        <Label text="Mahsulotni o‘chirish" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+        <TableView fx:id="productTable" prefHeight="300" prefWidth="460">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID" prefWidth="100"/>
+                <TableColumn fx:id="nameColumn" text="Nomi" prefWidth="200"/>
+                <TableColumn fx:id="priceColumn" text="Narxi" prefWidth="160"/>
+            </columns>
+        </TableView>
+
+        <Button text="Tanlangan mahsulotni o‘chirish" onAction="#handleDeleteProduct"/>
+    </VBox>
+</AnchorPane>

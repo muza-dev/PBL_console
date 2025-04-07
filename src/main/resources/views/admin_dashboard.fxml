@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+
+<?import javafx.scene.layout.VBox?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.AdminDashboardController"
+            prefHeight="500" prefWidth="750">
+
+    <!-- Statistikani ko‘rsatish -->
+    <Label layoutX="20" layoutY="10" text="📊Admin Statistikasi" style="-fx-font-size: 18px;"/>
+    <BarChart fx:id="statChart" layoutX="20" layoutY="40" prefWidth="700" prefHeight="250" title="Umumiy Ko‘rsatkichlar">
+        <xAxis>
+            <CategoryAxis label="Umumiy foydalanuvchilar soni"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis label="Qiymat"/>
+        </yAxis>
+    </BarChart>
+
+    <!-- Tugmalar -->
+    <Label layoutX="240.0" layoutY="310.0" text="Admin Panel" style="-fx-font-size: 20px;"/>
+    <Button layoutX="200.0" layoutY="350.0" text="➕Mahsulot qo‘shish" onAction="#openAddProductWindow" prefWidth="200.0"/>
+    <Button layoutX="200.0" layoutY="400.0" text="📋 Mahsulotlar ro‘yxati" onAction="#openProductList" />
+    <Button layoutX="200.0" layoutY="450.0" text="🗑️Mahsulotni o‘chirish" onAction="#handleDeleteProduct"/>
+    <Button layoutX="200.0" layoutY="500.0" text="🧾Buyurtmalarni ko‘rish"/>
+    <Button layoutX="200.0" layoutY="550.0" text="⬅︎ Chiqish" onAction="#handleLogout" prefWidth="200"/>
+
+</AnchorPane>
+

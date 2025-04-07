@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.OrderListController"
+            prefHeight="400" prefWidth="750">
+
+    <TableView fx:id="orderTable" layoutX="20" layoutY="20" prefWidth="700" prefHeight="340">
+        <columns>
+            <TableColumn fx:id="idCol" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="emailCol" text="Email" prefWidth="150"/>
+            <TableColumn fx:id="dateCol" text="Sana" prefWidth="120"/>
+            <TableColumn fx:id="itemsCol" text="Mahsulotlar" prefWidth="200"/>
+            <TableColumn fx:id="totalCol" text="Jami $" prefWidth="80"/>
+            <TableColumn fx:id="statusCol" text="Holati" prefWidth="100"/>
+        </columns>
+    </TableView>
+
+    <Label text="📦 Buyurtmalar ro‘yxati" layoutX="20" layoutY="0" style="-fx-font-size: 16px;"/>
+</AnchorPane>

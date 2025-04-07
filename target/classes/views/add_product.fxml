@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.AddProductController"
+            prefHeight="400.0" prefWidth="500.0">
+
+    <Label layoutX="180" layoutY="20" text="🆕 Mahsulot qo‘shish" style="-fx-font-size: 18px;"/>
+
+    <Label layoutX="50" layoutY="70" text="Nomi:"/>
+    <TextField fx:id="nameField" layoutX="150" layoutY="70" prefWidth="300"/>
+
+    <Label layoutX="50" layoutY="110" text="Tavsif:"/>
+    <TextField fx:id="descField" layoutX="150" layoutY="110" prefWidth="300"/>
+
+    <Label layoutX="50" layoutY="150" text="Narxi:"/>
+    <TextField fx:id="priceField" layoutX="150" layoutY="150" prefWidth="300"/>
+
+    <Label layoutX="50" layoutY="190" text="Miqdori:"/>
+    <TextField fx:id="quantityField" layoutX="150" layoutY="190" prefWidth="300"/>
+
+    <Label layoutX="50" layoutY="230" text="Kategoriya:"/>
+    <TextField fx:id="categoryField" layoutX="150" layoutY="230" prefWidth="300"/>
+
+    <Button layoutX="150" layoutY="280" text="➕ Qo‘shish" onAction="#handleAddProduct"/>
+    <Label fx:id="statusLabel" layoutX="150" layoutY="320" style="-fx-text-fill: green;"/>
+</AnchorPane>

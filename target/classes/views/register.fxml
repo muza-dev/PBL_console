@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controllers.RegisterController">
+    <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="30.0"
+          AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+        <Label text="📝 Ro‘yxatdan o‘tish" style="-fx-font-size: 18px;" />
+        <TextField fx:id="fullNameField" promptText="Ismingiz" />
+        <TextField fx:id="emailField" promptText="Emailingiz" />
+        <HBox spacing="5">
+            <PasswordField fx:id="passwordField" promptText="Parol" />
+            <TextField fx:id="passwordTextField" promptText="Parol" visible="false" managed="false" />
+            <Button text="👁" onAction="#togglePasswordVisibility" />
+        </HBox>
+
+        <Button text="Ro‘yxatdan o‘tish" onAction="#handleRegister"/>
+        <Button text="Tizimga kirish" onAction="#goToLogin" />
+        <Label fx:id="messageLabel" style="-fx-text-fill: red;"/>
+    </VBox>
+</AnchorPane>

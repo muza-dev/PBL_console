@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/PBL JSON file.iml" filepath="$PROJECT_DIR$/.idea/PBL JSON file.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/desktop.iml" filepath="$PROJECT_DIR$/desktop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ecommerce.iml" filepath="$PROJECT_DIR$/ecommerce.iml" />
+>>>>>>> e01d688 (Updated lines)
     </modules>
   </component>
 </project>
